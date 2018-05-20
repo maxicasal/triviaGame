@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - HexLoader (0.1.1)
+  - ObjectMapper (2.2.9)
+  - StringExtensionHTML (0.2.0)
+  - SwiftMessages (4.1.0)
+
+DEPENDENCIES:
+  - AlamofireObjectMapper (~> 4.0)
+  - HexLoader
+  - StringExtensionHTML (~> 0.2)
+  - SwiftMessages
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - HexLoader
+    - ObjectMapper
+    - StringExtensionHTML
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  HexLoader: 0e389575e244ebced8062c89a1ace15a70ad5221
+  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
+  StringExtensionHTML: 80fdb1b3a83669e371d27bfe2f208f067e2db328
+  SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
+
+PODFILE CHECKSUM: 20326ed0699743b68508dbec654eb3628c80766f
+
+COCOAPODS: 1.5.2

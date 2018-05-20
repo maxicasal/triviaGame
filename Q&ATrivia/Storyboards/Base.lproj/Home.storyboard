@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Q_ATrivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yPe-Ph-VXY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Trivia Challenge!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQy-xg-Vzu">
+                                <rect key="frame" x="16" y="36" width="343" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="r6G-Kk-aV7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be pressure with 10 True or False questions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7H1-Pn-Frp">
+                                <rect key="frame" x="16" y="193" width="343" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="qe6-Ff-CyP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can you score 100%? 🏆" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgx-VM-8tQ">
+                                <rect key="frame" x="16" y="338" width="343" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="4J5-d2-XR8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5S-wS-67j">
+                                <rect key="frame" x="16" y="584" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.0" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iKd-ye-On5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="BEGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4P7-US-fjn" kind="show" identifier="gameSegueId" id="IO8-dc-XgO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A5S-wS-67j" secondAttribute="bottom" constant="33" id="1T7-Hg-b7O"/>
+                            <constraint firstAttribute="trailing" secondItem="yPe-Ph-VXY" secondAttribute="trailing" id="1h0-UL-aSp"/>
+                            <constraint firstItem="yPe-Ph-VXY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2BM-x6-OOd"/>
+                            <constraint firstItem="kQy-xg-Vzu" firstAttribute="leading" secondItem="7H1-Pn-Frp" secondAttribute="leading" id="4h3-gM-otq"/>
+                            <constraint firstItem="yPe-Ph-VXY" firstAttribute="centerX" secondItem="Qgx-VM-8tQ" secondAttribute="centerX" id="Ilk-iD-d3Z"/>
+                            <constraint firstItem="7H1-Pn-Frp" firstAttribute="top" secondItem="kQy-xg-Vzu" secondAttribute="bottom" constant="62" id="JWW-UX-Zp6"/>
+                            <constraint firstItem="7H1-Pn-Frp" firstAttribute="leading" secondItem="Qgx-VM-8tQ" secondAttribute="leading" id="cLz-Hj-TKc"/>
+                            <constraint firstItem="kQy-xg-Vzu" firstAttribute="trailing" secondItem="7H1-Pn-Frp" secondAttribute="trailing" id="dL6-1K-Woh"/>
+                            <constraint firstItem="A5S-wS-67j" firstAttribute="leading" secondItem="Qgx-VM-8tQ" secondAttribute="leading" id="eWd-pd-JxC"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A5S-wS-67j" secondAttribute="trailing" constant="16" id="fDN-gW-h8D"/>
+                            <constraint firstAttribute="bottom" secondItem="yPe-Ph-VXY" secondAttribute="bottom" id="k60-ZI-kbv"/>
+                            <constraint firstItem="kQy-xg-Vzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mzx-DI-imK"/>
+                            <constraint firstItem="kQy-xg-Vzu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="pfP-8s-mVP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kQy-xg-Vzu" secondAttribute="trailing" constant="16" id="rbV-jO-wxU"/>
+                            <constraint firstItem="A5S-wS-67j" firstAttribute="width" secondItem="Qgx-VM-8tQ" secondAttribute="width" id="uDe-mo-gwI"/>
+                            <constraint firstItem="yPe-Ph-VXY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xkU-Uh-5Qz"/>
+                            <constraint firstItem="Qgx-VM-8tQ" firstAttribute="top" secondItem="7H1-Pn-Frp" secondAttribute="bottom" constant="50" id="zO9-iy-tYS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="subtitleLabel" destination="7H1-Pn-Frp" id="9mt-sA-kW4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="RUY-qB-QOb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Game" id="4P7-US-fjn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vah-bB-BsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="216"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="397" height="561"/>
+    </resources>
+</document>

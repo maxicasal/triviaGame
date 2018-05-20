@@ -1,0 +1,6 @@
+framework module HexLoader {
+  umbrella header "HexLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}

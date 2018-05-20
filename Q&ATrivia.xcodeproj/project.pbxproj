@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DFC6EC721525674FE5A2B3A /* Pods_Q_ATrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6AB09020B2254400264D0C /* Pods_Q_ATrivia.framework */; };
+		5A2D927908702F6BB2FA5CC2 /* Pods_Q_ATrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08D5CD594DB0B91BAAB389A /* Pods_Q_ATrivia.framework */; };
+		FB118D0D20B0E76600336469 /* ApiManagerQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB118D0C20B0E76600336469 /* ApiManagerQuestions.swift */; };
+		FB118D0F20B0E7CC00336469 /* QuestionsRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB118D0E20B0E7CC00336469 /* QuestionsRouters.swift */; };
+		FB60343C20AE139D00D2E985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60343B20AE139D00D2E985 /* AppDelegate.swift */; };
+		FB60343E20AE139D00D2E985 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60343D20AE139D00D2E985 /* HomeViewController.swift */; };
+		FB60344120AE139D00D2E985 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB60343F20AE139D00D2E985 /* Home.storyboard */; };
+		FB60344320AE139E00D2E985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB60344220AE139E00D2E985 /* Assets.xcassets */; };
+		FB60344620AE139E00D2E985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB60344420AE139E00D2E985 /* LaunchScreen.storyboard */; };
+		FB60345120AE139E00D2E985 /* Q_ATriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60345020AE139E00D2E985 /* Q_ATriviaTests.swift */; };
+		FB60345C20AE139E00D2E985 /* Q_ATriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60345B20AE139E00D2E985 /* Q_ATriviaUITests.swift */; };
+		FB60347020AE18D100D2E985 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB60346E20AE18D100D2E985 /* Game.storyboard */; };
+		FB60347320AE18E500D2E985 /* Score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB60347120AE18E500D2E985 /* Score.storyboard */; };
+		FB60347920AE1F3900D2E985 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60347820AE1F3900D2E985 /* Question.swift */; };
+		FB60347A20AE1F3900D2E985 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60347820AE1F3900D2E985 /* Question.swift */; };
+		FB60347B20AE1F3900D2E985 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60347820AE1F3900D2E985 /* Question.swift */; };
+		FB60348220AE2BAD00D2E985 /* BaseRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348120AE2BAD00D2E985 /* BaseRouterManager.swift */; };
+		FB60348320AE2BAD00D2E985 /* BaseRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348120AE2BAD00D2E985 /* BaseRouterManager.swift */; };
+		FB60348520AE2D2400D2E985 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348420AE2D2400D2E985 /* Router.swift */; };
+		FB60348720AE2D4F00D2E985 /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348620AE2D4F00D2E985 /* RouterManager.swift */; };
+		FB60348A20AE2FF600D2E985 /* ParameterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348920AE2FF600D2E985 /* ParameterBuilder.swift */; };
+		FB60348D20AE314F00D2E985 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348C20AE314F00D2E985 /* Constants.swift */; };
+		FB60349020AE322C00D2E985 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348F20AE322C00D2E985 /* APIManager.swift */; };
+		FB60349420AE42C800D2E985 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349320AE42C800D2E985 /* GameViewController.swift */; };
+		FB60349620AE42E400D2E985 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349520AE42E400D2E985 /* ScoreViewController.swift */; };
+		FB60349920AE497F00D2E985 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349820AE497F00D2E985 /* QuestionTableViewCell.swift */; };
+		FB8FDAF020B1C9DD00EEE6CC /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FDAEF20B1C9DD00EEE6CC /* MessageHandler.swift */; };
+		FB8FDAF220B1CD0100EEE6CC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FDAF120B1CD0100EEE6CC /* UIViewExtension.swift */; };
+		FBA799F620B223AC00C400EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60343B20AE139D00D2E985 /* AppDelegate.swift */; };
+		FBA799F720B223AD00C400EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60343B20AE139D00D2E985 /* AppDelegate.swift */; };
+		FBA799F820B223B200C400EE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348F20AE322C00D2E985 /* APIManager.swift */; };
+		FBA799F920B223B200C400EE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348F20AE322C00D2E985 /* APIManager.swift */; };
+		FBA799FA20B223B500C400EE /* ApiManagerQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB118D0C20B0E76600336469 /* ApiManagerQuestions.swift */; };
+		FBA799FB20B223B600C400EE /* ApiManagerQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB118D0C20B0E76600336469 /* ApiManagerQuestions.swift */; };
+		FBA799FC20B223BA00C400EE /* BaseRouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348120AE2BAD00D2E985 /* BaseRouterManager.swift */; };
+		FBA799FD20B223BC00C400EE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348420AE2D2400D2E985 /* Router.swift */; };
+		FBA799FE20B223BE00C400EE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348420AE2D2400D2E985 /* Router.swift */; };
+		FBA799FF20B223C100C400EE /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348620AE2D4F00D2E985 /* RouterManager.swift */; };
+		FBA79A0020B223C400C400EE /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348620AE2D4F00D2E985 /* RouterManager.swift */; };
+		FBA79A0120B223C700C400EE /* QuestionsRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB118D0E20B0E7CC00336469 /* QuestionsRouters.swift */; };
+		FBA79A0220B223C800C400EE /* QuestionsRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB118D0E20B0E7CC00336469 /* QuestionsRouters.swift */; };
+		FBA79A0320B223CB00C400EE /* ParameterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348920AE2FF600D2E985 /* ParameterBuilder.swift */; };
+		FBA79A0420B223CC00C400EE /* ParameterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348920AE2FF600D2E985 /* ParameterBuilder.swift */; };
+		FBA79A0520B223CF00C400EE /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FDAEF20B1C9DD00EEE6CC /* MessageHandler.swift */; };
+		FBA79A0620B223CF00C400EE /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FDAEF20B1C9DD00EEE6CC /* MessageHandler.swift */; };
+		FBA79A0720B223D100C400EE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FDAF120B1CD0100EEE6CC /* UIViewExtension.swift */; };
+		FBA79A0820B223D200C400EE /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8FDAF120B1CD0100EEE6CC /* UIViewExtension.swift */; };
+		FBA79A0920B223DB00C400EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB60344220AE139E00D2E985 /* Assets.xcassets */; };
+		FBA79A0A20B223DC00C400EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB60344220AE139E00D2E985 /* Assets.xcassets */; };
+		FBA79A0B20B223E500C400EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348C20AE314F00D2E985 /* Constants.swift */; };
+		FBA79A0C20B223E500C400EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60348C20AE314F00D2E985 /* Constants.swift */; };
+		FBA79A0D20B223E900C400EE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349320AE42C800D2E985 /* GameViewController.swift */; };
+		FBA79A0E20B223EA00C400EE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349320AE42C800D2E985 /* GameViewController.swift */; };
+		FBA79A0F20B223EC00C400EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60343D20AE139D00D2E985 /* HomeViewController.swift */; };
+		FBA79A1020B223ED00C400EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60343D20AE139D00D2E985 /* HomeViewController.swift */; };
+		FBA79A1120B223F000C400EE /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349520AE42E400D2E985 /* ScoreViewController.swift */; };
+		FBA79A1220B223F000C400EE /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349520AE42E400D2E985 /* ScoreViewController.swift */; };
+		FBA79A1320B223F400C400EE /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349820AE497F00D2E985 /* QuestionTableViewCell.swift */; };
+		FBA79A1420B223F400C400EE /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB60349820AE497F00D2E985 /* QuestionTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB60344D20AE139E00D2E985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB60343020AE139D00D2E985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB60343720AE139D00D2E985;
+			remoteInfo = "Q&ATrivia";
+		};
+		FB60345820AE139E00D2E985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB60343020AE139D00D2E985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB60343720AE139D00D2E985;
+			remoteInfo = "Q&ATrivia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FCB3AED1FD697689A76C059 /* Pods_Q_ATriviaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q_ATriviaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7983FD517A668F1853BD910D /* Pods_Q_ATriviaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q_ATriviaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E900F73F9E574A26A587DC /* Pods-Q&ATrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q&ATrivia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Q&ATrivia/Pods-Q&ATrivia.release.xcconfig"; sourceTree = "<group>"; };
+		B08D5CD594DB0B91BAAB389A /* Pods_Q_ATrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Q_ATrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A287574B0357F6BAAB3037 /* Pods-Q&ATrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Q&ATrivia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Q&ATrivia/Pods-Q&ATrivia.debug.xcconfig"; sourceTree = "<group>"; };
+		FB118D0C20B0E76600336469 /* ApiManagerQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerQuestions.swift; sourceTree = "<group>"; };
+		FB118D0E20B0E7CC00336469 /* QuestionsRouters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRouters.swift; sourceTree = "<group>"; };
+		FB60343820AE139D00D2E985 /* Q&ATrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Q&ATrivia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB60343B20AE139D00D2E985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB60343D20AE139D00D2E985 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FB60344020AE139D00D2E985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		FB60344220AE139E00D2E985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB60344520AE139E00D2E985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB60344720AE139E00D2E985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB60344C20AE139E00D2E985 /* Q&ATriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Q&ATriviaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB60345020AE139E00D2E985 /* Q_ATriviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_ATriviaTests.swift; sourceTree = "<group>"; };
+		FB60345220AE139E00D2E985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB60345720AE139E00D2E985 /* Q&ATriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Q&ATriviaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB60345B20AE139E00D2E985 /* Q_ATriviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q_ATriviaUITests.swift; sourceTree = "<group>"; };
+		FB60345D20AE139E00D2E985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB60346F20AE18D100D2E985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Game.storyboard; sourceTree = "<group>"; };
+		FB60347220AE18E500D2E985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Score.storyboard; sourceTree = "<group>"; };
+		FB60347820AE1F3900D2E985 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		FB60348120AE2BAD00D2E985 /* BaseRouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouterManager.swift; sourceTree = "<group>"; };
+		FB60348420AE2D2400D2E985 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FB60348620AE2D4F00D2E985 /* RouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
+		FB60348920AE2FF600D2E985 /* ParameterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterBuilder.swift; sourceTree = "<group>"; };
+		FB60348C20AE314F00D2E985 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB60348F20AE322C00D2E985 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FB60349320AE42C800D2E985 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB60349520AE42E400D2E985 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		FB60349820AE497F00D2E985 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		FB6AB08E20B2253D00264D0C /* Pods_Q_ATrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Q_ATrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB6AB09020B2254400264D0C /* Pods_Q_ATrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Q_ATrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8FDAEF20B1C9DD00EEE6CC /* MessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHandler.swift; sourceTree = "<group>"; };
+		FB8FDAF120B1CD0100EEE6CC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FBA79A1520B2246400C400EE /* HexLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HexLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA79A1720B2246C00C400EE /* HexLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HexLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB60343520AE139D00D2E985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2D927908702F6BB2FA5CC2 /* Pods_Q_ATrivia.framework in Frameworks */,
+				0DFC6EC721525674FE5A2B3A /* Pods_Q_ATrivia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB60344920AE139E00D2E985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB60345420AE139E00D2E985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E5A4CEF2D7170DAB0E889E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6A287574B0357F6BAAB3037 /* Pods-Q&ATrivia.debug.xcconfig */,
+				86E900F73F9E574A26A587DC /* Pods-Q&ATrivia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF231872A01ED434EB9241ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB6AB09020B2254400264D0C /* Pods_Q_ATrivia.framework */,
+				FB6AB08E20B2253D00264D0C /* Pods_Q_ATrivia.framework */,
+				FBA79A1720B2246C00C400EE /* HexLoader.framework */,
+				FBA79A1520B2246400C400EE /* HexLoader.framework */,
+				B08D5CD594DB0B91BAAB389A /* Pods_Q_ATrivia.framework */,
+				7983FD517A668F1853BD910D /* Pods_Q_ATriviaTests.framework */,
+				0FCB3AED1FD697689A76C059 /* Pods_Q_ATriviaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB60342F20AE139D00D2E985 = {
+			isa = PBXGroup;
+			children = (
+				FB60343A20AE139D00D2E985 /* Q&ATrivia */,
+				FB60344F20AE139E00D2E985 /* Q&ATriviaTests */,
+				FB60345A20AE139E00D2E985 /* Q&ATriviaUITests */,
+				FB60343920AE139D00D2E985 /* Products */,
+				4E5A4CEF2D7170DAB0E889E7 /* Pods */,
+				AF231872A01ED434EB9241ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB60343920AE139D00D2E985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB60343820AE139D00D2E985 /* Q&ATrivia.app */,
+				FB60344C20AE139E00D2E985 /* Q&ATriviaTests.xctest */,
+				FB60345720AE139E00D2E985 /* Q&ATriviaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB60343A20AE139D00D2E985 /* Q&ATrivia */ = {
+			isa = PBXGroup;
+			children = (
+				FB60343B20AE139D00D2E985 /* AppDelegate.swift */,
+				FB60347720AE1F2400D2E985 /* Backend */,
+				FB60348820AE2FE400D2E985 /* Helpers */,
+				FB60344720AE139E00D2E985 /* Info.plist */,
+				FB60346C20AE148300D2E985 /* Models */,
+				FB60346D20AE148B00D2E985 /* Resources */,
+				FB60346920AE146F00D2E985 /* Storyboards */,
+				FB60348B20AE314300D2E985 /* SupportingFiles */,
+				FB60349120AE364600D2E985 /* ViewControllers */,
+				FB60349720AE496F00D2E985 /* Views */,
+			);
+			path = "Q&ATrivia";
+			sourceTree = "<group>";
+		};
+		FB60344F20AE139E00D2E985 /* Q&ATriviaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB60345020AE139E00D2E985 /* Q_ATriviaTests.swift */,
+				FB60345220AE139E00D2E985 /* Info.plist */,
+			);
+			path = "Q&ATriviaTests";
+			sourceTree = "<group>";
+		};
+		FB60345A20AE139E00D2E985 /* Q&ATriviaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB60345B20AE139E00D2E985 /* Q_ATriviaUITests.swift */,
+				FB60345D20AE139E00D2E985 /* Info.plist */,
+			);
+			path = "Q&ATriviaUITests";
+			sourceTree = "<group>";
+		};
+		FB60346920AE146F00D2E985 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FB60346E20AE18D100D2E985 /* Game.storyboard */,
+				FB60343F20AE139D00D2E985 /* Home.storyboard */,
+				FB60344420AE139E00D2E985 /* LaunchScreen.storyboard */,
+				FB60347120AE18E500D2E985 /* Score.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FB60346C20AE148300D2E985 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB60347820AE1F3900D2E985 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB60346D20AE148B00D2E985 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB60344220AE139E00D2E985 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FB60347720AE1F2400D2E985 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				FB60348E20AE321D00D2E985 /* Managers */,
+				FB60348020AE2B8A00D2E985 /* Routers */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		FB60348020AE2B8A00D2E985 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FB60348120AE2BAD00D2E985 /* BaseRouterManager.swift */,
+				FB60348420AE2D2400D2E985 /* Router.swift */,
+				FB60348620AE2D4F00D2E985 /* RouterManager.swift */,
+				FB118D0E20B0E7CC00336469 /* QuestionsRouters.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		FB60348820AE2FE400D2E985 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FB60348920AE2FF600D2E985 /* ParameterBuilder.swift */,
+				FB8FDAEF20B1C9DD00EEE6CC /* MessageHandler.swift */,
+				FB8FDAF120B1CD0100EEE6CC /* UIViewExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FB60348B20AE314300D2E985 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FB60348C20AE314F00D2E985 /* Constants.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FB60348E20AE321D00D2E985 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FB60348F20AE322C00D2E985 /* APIManager.swift */,
+				FB118D0C20B0E76600336469 /* ApiManagerQuestions.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FB60349120AE364600D2E985 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB60349320AE42C800D2E985 /* GameViewController.swift */,
+				FB60343D20AE139D00D2E985 /* HomeViewController.swift */,
+				FB60349520AE42E400D2E985 /* ScoreViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB60349720AE496F00D2E985 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB60349820AE497F00D2E985 /* QuestionTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB60343720AE139D00D2E985 /* Q&ATrivia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB60346020AE139E00D2E985 /* Build configuration list for PBXNativeTarget "Q&ATrivia" */;
+			buildPhases = (
+				F4F3CC49962389644220BEB5 /* [CP] Check Pods Manifest.lock */,
+				FB60343420AE139D00D2E985 /* Sources */,
+				FB60343520AE139D00D2E985 /* Frameworks */,
+				FB60343620AE139D00D2E985 /* Resources */,
+				091A63806532B4EF4488C61E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Q&ATrivia";
+			productName = "Q&ATrivia";
+			productReference = FB60343820AE139D00D2E985 /* Q&ATrivia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB60344B20AE139E00D2E985 /* Q&ATriviaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB60346320AE139E00D2E985 /* Build configuration list for PBXNativeTarget "Q&ATriviaTests" */;
+			buildPhases = (
+				FB60344820AE139E00D2E985 /* Sources */,
+				FB60344920AE139E00D2E985 /* Frameworks */,
+				FB60344A20AE139E00D2E985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB60344E20AE139E00D2E985 /* PBXTargetDependency */,
+			);
+			name = "Q&ATriviaTests";
+			productName = "Q&ATriviaTests";
+			productReference = FB60344C20AE139E00D2E985 /* Q&ATriviaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB60345620AE139E00D2E985 /* Q&ATriviaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB60346620AE139E00D2E985 /* Build configuration list for PBXNativeTarget "Q&ATriviaUITests" */;
+			buildPhases = (
+				FB60345320AE139E00D2E985 /* Sources */,
+				FB60345420AE139E00D2E985 /* Frameworks */,
+				FB60345520AE139E00D2E985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB60345920AE139E00D2E985 /* PBXTargetDependency */,
+			);
+			name = "Q&ATriviaUITests";
+			productName = "Q&ATriviaUITests";
+			productReference = FB60345720AE139E00D2E985 /* Q&ATriviaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB60343020AE139D00D2E985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Max;
+				TargetAttributes = {
+					FB60343720AE139D00D2E985 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					FB60344B20AE139E00D2E985 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FB60343720AE139D00D2E985;
+					};
+					FB60345620AE139E00D2E985 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FB60343720AE139D00D2E985;
+					};
+				};
+			};
+			buildConfigurationList = FB60343320AE139D00D2E985 /* Build configuration list for PBXProject "Q&ATrivia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB60342F20AE139D00D2E985;
+			productRefGroup = FB60343920AE139D00D2E985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB60343720AE139D00D2E985 /* Q&ATrivia */,
+				FB60344B20AE139E00D2E985 /* Q&ATriviaTests */,
+				FB60345620AE139E00D2E985 /* Q&ATriviaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB60343620AE139D00D2E985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB60344620AE139E00D2E985 /* LaunchScreen.storyboard in Resources */,
+				FB60344320AE139E00D2E985 /* Assets.xcassets in Resources */,
+				FB60347020AE18D100D2E985 /* Game.storyboard in Resources */,
+				FB60347320AE18E500D2E985 /* Score.storyboard in Resources */,
+				FB60344120AE139D00D2E985 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB60344A20AE139E00D2E985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA79A0920B223DB00C400EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB60345520AE139E00D2E985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA79A0A20B223DC00C400EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		091A63806532B4EF4488C61E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Q&ATrivia/Pods-Q&ATrivia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/HexLoader/HexLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HexLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Q&ATrivia/Pods-Q&ATrivia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F3CC49962389644220BEB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Q&ATrivia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB60343420AE139D00D2E985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB60343E20AE139D00D2E985 /* HomeViewController.swift in Sources */,
+				FB60349920AE497F00D2E985 /* QuestionTableViewCell.swift in Sources */,
+				FB60348A20AE2FF600D2E985 /* ParameterBuilder.swift in Sources */,
+				FB60349020AE322C00D2E985 /* APIManager.swift in Sources */,
+				FB60347920AE1F3900D2E985 /* Question.swift in Sources */,
+				FB60348720AE2D4F00D2E985 /* RouterManager.swift in Sources */,
+				FB8FDAF220B1CD0100EEE6CC /* UIViewExtension.swift in Sources */,
+				FB60348220AE2BAD00D2E985 /* BaseRouterManager.swift in Sources */,
+				FB8FDAF020B1C9DD00EEE6CC /* MessageHandler.swift in Sources */,
+				FB60343C20AE139D00D2E985 /* AppDelegate.swift in Sources */,
+				FB60348520AE2D2400D2E985 /* Router.swift in Sources */,
+				FB60348D20AE314F00D2E985 /* Constants.swift in Sources */,
+				FB118D0F20B0E7CC00336469 /* QuestionsRouters.swift in Sources */,
+				FB60349420AE42C800D2E985 /* GameViewController.swift in Sources */,
+				FB60349620AE42E400D2E985 /* ScoreViewController.swift in Sources */,
+				FB118D0D20B0E76600336469 /* ApiManagerQuestions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB60344820AE139E00D2E985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA79A0D20B223E900C400EE /* GameViewController.swift in Sources */,
+				FBA799FA20B223B500C400EE /* ApiManagerQuestions.swift in Sources */,
+				FBA799F620B223AC00C400EE /* AppDelegate.swift in Sources */,
+				FBA79A0520B223CF00C400EE /* MessageHandler.swift in Sources */,
+				FBA799FF20B223C100C400EE /* RouterManager.swift in Sources */,
+				FBA79A1020B223ED00C400EE /* HomeViewController.swift in Sources */,
+				FB60345120AE139E00D2E985 /* Q_ATriviaTests.swift in Sources */,
+				FBA799FD20B223BC00C400EE /* Router.swift in Sources */,
+				FBA79A0820B223D200C400EE /* UIViewExtension.swift in Sources */,
+				FBA79A1420B223F400C400EE /* QuestionTableViewCell.swift in Sources */,
+				FBA79A0C20B223E500C400EE /* Constants.swift in Sources */,
+				FBA79A0320B223CB00C400EE /* ParameterBuilder.swift in Sources */,
+				FBA79A0220B223C800C400EE /* QuestionsRouters.swift in Sources */,
+				FBA799F820B223B200C400EE /* APIManager.swift in Sources */,
+				FB60348320AE2BAD00D2E985 /* BaseRouterManager.swift in Sources */,
+				FB60347A20AE1F3900D2E985 /* Question.swift in Sources */,
+				FBA79A1120B223F000C400EE /* ScoreViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB60345320AE139E00D2E985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA79A0E20B223EA00C400EE /* GameViewController.swift in Sources */,
+				FBA799FB20B223B600C400EE /* ApiManagerQuestions.swift in Sources */,
+				FBA799F920B223B200C400EE /* APIManager.swift in Sources */,
+				FBA79A0620B223CF00C400EE /* MessageHandler.swift in Sources */,
+				FBA79A0020B223C400C400EE /* RouterManager.swift in Sources */,
+				FBA79A0F20B223EC00C400EE /* HomeViewController.swift in Sources */,
+				FBA799F720B223AD00C400EE /* AppDelegate.swift in Sources */,
+				FBA799FE20B223BE00C400EE /* Router.swift in Sources */,
+				FBA79A0720B223D100C400EE /* UIViewExtension.swift in Sources */,
+				FBA79A1320B223F400C400EE /* QuestionTableViewCell.swift in Sources */,
+				FBA79A0B20B223E500C400EE /* Constants.swift in Sources */,
+				FBA79A0420B223CC00C400EE /* ParameterBuilder.swift in Sources */,
+				FBA79A0120B223C700C400EE /* QuestionsRouters.swift in Sources */,
+				FBA799FC20B223BA00C400EE /* BaseRouterManager.swift in Sources */,
+				FB60345C20AE139E00D2E985 /* Q_ATriviaUITests.swift in Sources */,
+				FB60347B20AE1F3900D2E985 /* Question.swift in Sources */,
+				FBA79A1220B223F000C400EE /* ScoreViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB60344E20AE139E00D2E985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB60343720AE139D00D2E985 /* Q&ATrivia */;
+			targetProxy = FB60344D20AE139E00D2E985 /* PBXContainerItemProxy */;
+		};
+		FB60345920AE139E00D2E985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB60343720AE139D00D2E985 /* Q&ATrivia */;
+			targetProxy = FB60345820AE139E00D2E985 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB60343F20AE139D00D2E985 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB60344020AE139D00D2E985 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		FB60344420AE139E00D2E985 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB60344520AE139E00D2E985 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB60346E20AE18D100D2E985 /* Game.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB60346F20AE18D100D2E985 /* Base */,
+			);
+			name = Game.storyboard;
+			sourceTree = "<group>";
+		};
+		FB60347120AE18E500D2E985 /* Score.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB60347220AE18E500D2E985 /* Base */,
+			);
+			name = Score.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB60345E20AE139E00D2E985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB60345F20AE139E00D2E985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB60346120AE139E00D2E985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A287574B0357F6BAAB3037 /* Pods-Q&ATrivia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Q&ATrivia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max.casal.Q-ATrivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB60346220AE139E00D2E985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86E900F73F9E574A26A587DC /* Pods-Q&ATrivia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Q&ATrivia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max.casal.Q-ATrivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB60346420AE139E00D2E985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Q&ATriviaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max.casal.Q-ATriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Q&ATrivia.app/Q&ATrivia";
+			};
+			name = Debug;
+		};
+		FB60346520AE139E00D2E985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Q&ATriviaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max.casal.Q-ATriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Q&ATrivia.app/Q&ATrivia";
+			};
+			name = Release;
+		};
+		FB60346720AE139E00D2E985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Q&ATriviaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max.casal.Q-ATriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Q&ATrivia";
+			};
+			name = Debug;
+		};
+		FB60346820AE139E00D2E985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Q&ATriviaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.max.casal.Q-ATriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Q&ATrivia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB60343320AE139D00D2E985 /* Build configuration list for PBXProject "Q&ATrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB60345E20AE139E00D2E985 /* Debug */,
+				FB60345F20AE139E00D2E985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB60346020AE139E00D2E985 /* Build configuration list for PBXNativeTarget "Q&ATrivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB60346120AE139E00D2E985 /* Debug */,
+				FB60346220AE139E00D2E985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB60346320AE139E00D2E985 /* Build configuration list for PBXNativeTarget "Q&ATriviaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB60346420AE139E00D2E985 /* Debug */,
+				FB60346520AE139E00D2E985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB60346620AE139E00D2E985 /* Build configuration list for PBXNativeTarget "Q&ATriviaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB60346720AE139E00D2E985 /* Debug */,
+				FB60346820AE139E00D2E985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB60343020AE139D00D2E985 /* Project object */;
+}
