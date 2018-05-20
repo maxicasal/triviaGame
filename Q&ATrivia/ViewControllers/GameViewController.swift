@@ -16,6 +16,7 @@ class GameViewController: UIViewController {
 
         HexagonLoaderConfig.shared.backgroundType = .dark
         questionLabel.adjustsFontSizeToFitWidth = true
+        categoryLabel.adjustsFontSizeToFitWidth = true
         loadQuestions()
     }
 
