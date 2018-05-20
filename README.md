@@ -7,7 +7,6 @@ This project is a basic trivia game.
 * Number of default questions: 10 questiosn
 
 ## Some images of the game
-![alt text](https://github.com/maxicasal/triviaGame/blob/master/imgs/img1.png)
 
 ![alt text](https://github.com/maxicasal/triviaGame/blob/master/imgs/img1.png)
 
@@ -15,7 +14,9 @@ This project is a basic trivia game.
 
 ![alt text](https://github.com/maxicasal/triviaGame/blob/master/imgs/img1.png)
 
-## To Run and play the gam
+![alt text](https://github.com/maxicasal/triviaGame/blob/master/imgs/img1.png)
+
+## To Run and play the game
 
 ```
 Download the source or clone the repo.
